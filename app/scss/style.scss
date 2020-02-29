@@ -2,8 +2,67 @@
 @import "../../node_modules/slick-carousel/slick/slick";
 @import "../../node_modules/magnific-popup/dist/magnific-popup";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../css/fonts.css";
+@import "../css/icons.css";
+
+$font_title : 'Odibee Sans';
+$font_sub   : 'Noto Sans KR';
+$size_title : 20px;
+$size_sub   : 30px;
+$color_text : #1B1B1B;
+$color_title: #66360C;
+
+body {
+    font-family: $font_sub;
+}
+
+/* навигация */
+.row {
+    display   : block;
+    background: #A9A9A9;
+
+    .navbar-brand {
+        color: #66360C;
+    }
+
+    .navbar-toggler {
+        color: #66360C;
+
+        span {
+            padding-top: 6px;
+        }
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        color: $color_text;
+
+        &:hover {
+            color: white;
+        }
+    }
+    .form-control{
+
+    }
+}
 
 
 
 
 
+
+
+
+
+
+/* контайнер хедер */
+/* контейнер about_us */
+/* контейнер our_services */
+/* контейнер letest_works */
+/* контайнер prising_plan */
+/* контейнер pircing_plan */
+/* контейнер our_team_member */
+/* контейнер Blog */
+/* контейнер contact_us */
+/* футер */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -6,6 +7,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
+@import url(../css/fonts.css);
+@import url(../css/icons.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -871,3 +874,44 @@ img.mfp-img {
     padding-right: 6px;
   }
 }
+
+body {
+  font-family: "Noto Sans KR";
+}
+
+/* навигация */
+.row {
+  display: block;
+  background: #A9A9A9;
+}
+
+.row .navbar-brand {
+  color: #66360C;
+}
+
+.row .navbar-toggler {
+  color: #66360C;
+}
+
+.row .navbar-toggler span {
+  padding-top: 6px;
+}
+
+.navbar-nav .nav-link {
+  color: #1B1B1B;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+}
+
+/* контайнер хедер */
+/* контейнер about_us */
+/* контейнер our_services */
+/* контейнер letest_works */
+/* контайнер prising_plan */
+/* контейнер pircing_plan */
+/* контейнер our_team_member */
+/* контейнер Blog */
+/* контейнер contact_us */
+/* футер */

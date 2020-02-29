@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Odibee Sans';
+    src: url('../fonts/OdibeeSans-Regular.ttf')
+ }
+
+ @font-face {
+    font-family: 'Trade Winds';
+    src: url('../fonts/TradeWinds-Regular.ttf')
+ }
+
+
+ @font-face {
+   font-family: 'Noto Sans KR';
+   src: url('../fonts/NotoSansKR-Black.otf')
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   src: url('../fonts/NotoSansKR-Bold.otf')
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   src: url('../fonts/TradeWinds-Regular.ttf')
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   src: url('../fonts/TradeWinds-Regular.ttf')
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   src: url('../fonts/TradeWinds-Regular.ttf')
+}
