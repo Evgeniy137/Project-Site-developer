@@ -43,8 +43,26 @@ body {
         }
     }
     .form-control{
-
+        
     }
+    button{
+        background:$color_text ;
+        padding: 0;
+        color: white;
+        font-size: 20px;
+        border: none;
+        &:hover{
+            border: 2px solid white;
+            background: $color_text;
+            box-shadow: none;
+            font-size: 19px;
+        }
+        &:focus{
+            box-shadow: none;
+            color: white;
+        }
+    }
+   
 }
 
 

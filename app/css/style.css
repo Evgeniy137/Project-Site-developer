@@ -905,6 +905,26 @@ body {
   color: white;
 }
 
+.navbar-nav button {
+  background: #1B1B1B;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+.navbar-nav button:hover {
+  border: 2px solid white;
+  background: #1B1B1B;
+  box-shadow: none;
+  font-size: 19px;
+}
+
+.navbar-nav button:focus {
+  box-shadow: none;
+  color: white;
+}
+
 /* контайнер хедер */
 /* контейнер about_us */
 /* контейнер our_services */
