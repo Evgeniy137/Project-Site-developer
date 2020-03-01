@@ -107,3 +107,12 @@
 .icon-instagrem:before {
   content: "\79";
 }
+.icon-map-marker:before {
+  content: "\77";
+}
+.icon-envelope:before {
+  content: "\78";
+}
+.icon-search:before {
+  content: "\7a";
+}
