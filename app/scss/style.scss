@@ -5,7 +5,7 @@
 @import "../css/fonts.css";
 @import "../css/icons.css";
 
-$font_title : 'Odibee Sans';
+$font_title : 'Cabin';
 $font_sub   : 'Noto Sans KR';
 $size_title : 20px;
 $size_sub   : 30px;
@@ -14,15 +14,18 @@ $color_title: #66360C;
 
 body {
     font-family: $font_sub;
+    background : #CACBCF;
 }
 
 /* навигация */
-.row {
-    display   : block;
-    background: #A9A9A9;
+.navigation {
+    display: block;
+    padding: 10px;
 
     .navbar-brand {
-        color: #66360C;
+        color      : #66360C;
+        font-family: $font_title;
+        font-size  : 30px;
     }
 
     .navbar-toggler {
@@ -39,45 +42,232 @@ body {
         color: $color_text;
 
         &:hover {
-            color: white;
+            font-size    : 15px;
+            border-bottom: 2px solid $color_title;
         }
     }
-    .form-control{
-        
+
+    .form-control {
+        border: 1px solid $color_text;
     }
-    button{
-        background:$color_text ;
-        padding: 0;
-        color: white;
+
+    button {
+        padding  : 0;
+        color    : $color_text;
         font-size: 20px;
-        border: none;
-        &:hover{
-            border: 2px solid white;
-            background: $color_text;
+        border   : none;
+        border   : 2px solid $color_text;
+
+        &:hover {
+            border    : 2px solid white;
+            background: #008A7B;
             box-shadow: none;
-            font-size: 19px;
+            color     : #ffffff;
         }
-        &:focus{
+
+        &:active {
+            color     : #ffffff;
             box-shadow: none;
-            color: white;
+            border    : 2px solid $color_text;
+            background: #008A7B;
+            box-shadow: none;
         }
     }
-   
+
+}
+
+/* контайнер хедер */
+.container_heder {
+    background-image   : url(../img/bg_header.jpg);
+    background-position: center center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+
+    .container_heder_text {
+        text-align : center;
+        padding-top: 150px;
+
+        h1 {
+            font-family: $font_title;
+            color      : #ffffff;
+            font-weight: bold;
+            font-size  : 50px;
+
+        }
+
+        h2 {
+            font-family: $font_sub;
+            color      : #ffffff;
+        }
+
+        button {
+            width           : 220px;
+            height          : 70px;
+            border          : 3px solid #ffffff;
+            background-image: none;
+            background      : transparent;
+            background-color: transparent;
+            margin          : 50px 30px;
+            font-family     : $font_title;
+            font-weight     : bold;
+            font-size       : 20px;
+            color           : #ffffff;
+
+            &:hover {
+                background: #008A7B;
+            }
+
+            &:active {
+                color : $color_text;
+                border: 3px solid $color_text;
+            }
+        }
+
+        i {
+            cursor       : pointer;
+            display      : block;
+            margin-top   : 100px;
+            margin-bottom: 50px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/* контейнер about_us */
+.about_us {
+    text-align: center;
+
+    .about_us_text {
+        padding-top: 120px;
+
+        h2 {
+            font-family: $font_title;
+            font-weight: bold;
+            font-size  : 40px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .about_us_card {
+            padding-top    : 110px;
+            display        : flex;
+            justify-content: center;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            i {
+                font-size: 50px;
+            }
+        }
+
+    }
+
+}
+
+/* контейнер our_services */
+.our_services {
+    text-align: center;
+
+    .our_services_items {
+        padding-top   : 280px;
+        padding-bottom: 100px;
+
+        h2 {
+            font-family: $font_title;
+            font-weight: bold;
+            font-size  : 40px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+.our_services_block {
+    display        : flex;
+    justify-content: center;
+
+
+    .our_services_card {
+        border        : 1px solid $color_text;
+        margin        : 30px;
+        padding-bottom: 30px;
+        padding-top   : 30px;
+        background    : #ffffff;
+        box-shadow    : 0px 0px 24px 11px $color_text;
+
+        &:hover {
+            background: #008A7B;
+            box-shadow: 0px 0px 24px 11px #ffffff;
+            border    : none;
+            color     : #ffffff;
+        }
+
+        i {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-family: $font_title;
+            font-weight: bold;
+            font-size  : 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        button {
+            margin-top : 20px;
+            padding    : 20px;
+            border     : 2px solid $color_text;
+            font-family: $font_title;
+            font-weight: bold;
+
+            &:hover {
+                color     : #ffffff;
+                background: #008A7B;
+                border    : 2px solid #ffffff;
+            }
+        }
+    }
+}
+
+/* контейнер letest_works */
+.letest_works {
+    text-align: center;
+
+    .letest_works_text {
+        padding-top   : 150px;
+        padding-bottom: 100px;
+
+        h2 {
+            font-family: $font_title;
+            font-weight: bold;
+            font-size  : 40px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .letest_works_popup_item{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
 
-
-
-
-
-
-
-
-/* контайнер хедер */
-/* контейнер about_us */
-/* контейнер our_services */
-/* контейнер letest_works */
 /* контайнер prising_plan */
 /* контейнер pircing_plan */
 /* контейнер our_team_member */

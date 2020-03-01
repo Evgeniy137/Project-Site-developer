@@ -877,23 +877,26 @@ img.mfp-img {
 
 body {
   font-family: "Noto Sans KR";
+  background: #CACBCF;
 }
 
 /* навигация */
-.row {
+.navigation {
   display: block;
-  background: #A9A9A9;
+  padding: 10px;
 }
 
-.row .navbar-brand {
+.navigation .navbar-brand {
+  color: #66360C;
+  font-family: "Cabin";
+  font-size: 30px;
+}
+
+.navigation .navbar-toggler {
   color: #66360C;
 }
 
-.row .navbar-toggler {
-  color: #66360C;
-}
-
-.row .navbar-toggler span {
+.navigation .navbar-toggler span {
   padding-top: 6px;
 }
 
@@ -902,33 +905,224 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: white;
+  font-size: 15px;
+  border-bottom: 2px solid #66360C;
+}
+
+.navbar-nav .form-control {
+  border: 1px solid #1B1B1B;
 }
 
 .navbar-nav button {
-  background: #1B1B1B;
   padding: 0;
-  color: white;
+  color: #1B1B1B;
   font-size: 20px;
   border: none;
+  border: 2px solid #1B1B1B;
 }
 
 .navbar-nav button:hover {
   border: 2px solid white;
-  background: #1B1B1B;
+  background: #008A7B;
   box-shadow: none;
-  font-size: 19px;
+  color: #ffffff;
 }
 
-.navbar-nav button:focus {
+.navbar-nav button:active {
+  color: #ffffff;
   box-shadow: none;
-  color: white;
+  border: 2px solid #1B1B1B;
+  background: #008A7B;
+  box-shadow: none;
 }
 
 /* контайнер хедер */
+.container_heder {
+  background-image: url(../img/bg_header.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container_heder .container_heder_text {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.container_heder .container_heder_text h1 {
+  font-family: "Cabin";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.container_heder .container_heder_text h2 {
+  font-family: "Noto Sans KR";
+  color: #ffffff;
+}
+
+.container_heder .container_heder_text button {
+  width: 220px;
+  height: 70px;
+  border: 3px solid #ffffff;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
+  margin: 50px 30px;
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.container_heder .container_heder_text button:hover {
+  background: #008A7B;
+}
+
+.container_heder .container_heder_text button:active {
+  color: #1B1B1B;
+  border: 3px solid #1B1B1B;
+}
+
+.container_heder .container_heder_text i {
+  cursor: pointer;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.container_heder .container_heder_text i:hover {
+  color: #ffffff;
+}
+
 /* контейнер about_us */
+.about_us {
+  text-align: center;
+}
+
+.about_us .about_us_text {
+  padding-top: 120px;
+}
+
+.about_us .about_us_text h2 {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.about_us .about_us_text h3 {
+  font-size: 20px;
+}
+
+.about_us .about_us_text .about_us_card {
+  padding-top: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.about_us .about_us_text .about_us_card h2 {
+  font-size: 25px;
+}
+
+.about_us .about_us_text .about_us_card i {
+  font-size: 50px;
+}
+
 /* контейнер our_services */
+.our_services {
+  text-align: center;
+}
+
+.our_services .our_services_items {
+  padding-top: 280px;
+  padding-bottom: 100px;
+}
+
+.our_services .our_services_items h2 {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.our_services .our_services_items h3 {
+  font-size: 20px;
+}
+
+.our_services_block {
+  display: flex;
+  justify-content: center;
+}
+
+.our_services_block .our_services_card {
+  border: 1px solid #1B1B1B;
+  margin: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 24px 11px #1B1B1B;
+}
+
+.our_services_block .our_services_card:hover {
+  background: #008A7B;
+  box-shadow: 0px 0px 24px 11px #ffffff;
+  border: none;
+  color: #ffffff;
+}
+
+.our_services_block .our_services_card i {
+  font-size: 50px;
+}
+
+.our_services_block .our_services_card h2 {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.our_services_block .our_services_card h3 {
+  font-size: 20px;
+}
+
+.our_services_block .our_services_card button {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #1B1B1B;
+  font-family: "Cabin";
+  font-weight: bold;
+}
+
+.our_services_block .our_services_card button:hover {
+  color: #ffffff;
+  background: #008A7B;
+  border: 2px solid #ffffff;
+}
+
 /* контейнер letest_works */
+.letest_works {
+  text-align: center;
+}
+
+.letest_works .letest_works_text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.letest_works .letest_works_text h2 {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.letest_works .letest_works_text h3 {
+  font-size: 20px;
+}
+
+.letest_works .letest_works_popup_item {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 /* контайнер prising_plan */
 /* контейнер pircing_plan */
 /* контейнер our_team_member */
