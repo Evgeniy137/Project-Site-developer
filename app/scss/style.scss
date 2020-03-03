@@ -14,14 +14,36 @@ $color_title: #66360C;
 
 body {
     font-family: $font_sub;
-    transition : 0.5s;
+}
+
+
+.black {
+    z-index         : 1000;
+    position        : fixed;
+    top             : 0;
+    right           : 0;
+    left            : 0;
+    transition      : all ease 1s;
+    background-color: #587499;
+    box-shadow      : 0px 0px 15px 15px #587499;
+
+    .nav-item {
+        a {
+            color      : #ffffff;
+            font-weight: bold;
+        }
+
+    }
 
 }
 
+
+
 /* навигация */
 .navigation {
-    display: block;
-    padding: 10px;
+    display   : block;
+    padding   : 10px;
+    transition: 0.5s;
 
     .navbar-brand {
         color      : #66360C;
@@ -106,6 +128,7 @@ body {
             font-weight     : bold;
             font-size       : 20px;
             color           : #ffffff;
+            text-decoration: none;
 
             &:hover {
                 background: #008A7B;
@@ -679,37 +702,45 @@ body {
         }
     }
 }
+
 /* футер */
-.footer{
-    
+.footer {
+
     text-align: center;
-    .footer_content{
-        display: flex;
+
+    .footer_content {
+        display        : flex;
         justify-content: space-around;
-        .footer_icons{
-            display: flex;
+
+        .footer_icons {
+            display        : flex;
             justify-content: space-around;
-           padding-top: 50px;
-            i{
-                color: black;
+            padding-top    : 50px;
+
+            i {
+                color    : black;
                 font-size: 40px;
-                cursor: pointer;
-                &:hover{
-                    color:#008A7B ;
+                cursor   : pointer;
+
+                &:hover {
+                    color: #008A7B;
                 }
-                &:active{
+
+                &:active {
                     font-size: 35px;
                 }
             }
         }
     }
-    .footer_text{
+
+    .footer_text {
         justify-content: center;
-        text-transform: uppercase;
-        padding: 20px;
-        color: black;
-        font-weight: bold;
-        h2{
+        text-transform : uppercase;
+        padding        : 20px;
+        color          : black;
+        font-weight    : bold;
+
+        h2 {
             font-size: 10px;
         }
     }
