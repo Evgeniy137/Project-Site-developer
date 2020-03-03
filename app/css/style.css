@@ -1275,15 +1275,28 @@ body {
   font-size: 20px;
 }
 
-.carousel-inner .carousel-item .slide {
+.our_team_member_carousel {
+  margin-top: 100px;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-item .slide {
   display: flex;
   justify-content: space-between;
   margin: 30px;
 }
 
-.carousel-inner .carousel-item .slide img {
+.our_team_member_carousel .carousel-inner .carousel-item .slide img {
+  border-radius: 30%;
   width: 100px;
   height: 300px;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-control-prev span {
+  border-radius: 50%;
+  position: absolute;
+  color: red;
+  background: black;
+  top: 0;
 }
 
 /* контейнер Blog */

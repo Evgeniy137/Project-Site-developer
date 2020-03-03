@@ -435,22 +435,38 @@ body {
     }
 }
 
-.carousel-inner {
+.our_team_member_carousel {
+    margin-top: 100px;
 
-    .carousel-item {
-        .slide {
-            display: flex;
-            justify-content: space-between;
-            margin: 30px;
-            img {
+    .carousel-inner {
 
-                width : 100px;
-                height: 300px;
+        .carousel-item {
+            .slide {
+                display        : flex;
+                justify-content: space-between;
+                margin         : 30px;
+
+                img {
+                    border-radius: 30%;
+                    width : 100px;
+                    height: 300px;
+                }
+            }
+
+        }
+        .carousel-control-prev{
+           
+            span{
+                border-radius: 50%;
+                position: absolute;
+                 color: red;
+                 background: black;
+                 top: 0;
             }
         }
-
     }
 }
+
 
 
 
