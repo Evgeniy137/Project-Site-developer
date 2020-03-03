@@ -1285,20 +1285,300 @@ body {
   margin: 30px;
 }
 
-.our_team_member_carousel .carousel-inner .carousel-item .slide img {
-  border-radius: 30%;
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content {
+  margin-bottom: 50px;
+  padding: 0;
+  border-radius: 25%;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content:hover {
+  box-shadow: 0px 0px 20px 12px #008A7B;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content img {
+  border-radius: 25%;
   width: 100px;
   height: 300px;
 }
 
-.our_team_member_carousel .carousel-inner .carousel-control-prev span {
-  border-radius: 50%;
-  position: absolute;
-  color: red;
-  background: black;
-  top: 0;
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content h2 {
+  padding-top: 30px;
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 40px;
 }
 
-/* контейнер Blog */
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content h3 {
+  font-size: 20px;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content .slide_icons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content .slide_icons i {
+  cursor: pointer;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content .slide_icons i:hover {
+  color: #008A7B;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-item .slide .slide_content .slide_icons i:active {
+  font-size: 20px;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-control-prev {
+  top: 5%;
+  bottom: auto;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-control-prev span {
+  position: absolute;
+  left: 0;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-control-next {
+  top: 5%;
+  bottom: auto;
+}
+
+.our_team_member_carousel .carousel-inner .carousel-control-next span {
+  position: absolute;
+  right: 0;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
 /* контейнер contact_us */
+.contact_us {
+  margin-top: 100px;
+  background-image: url(../img/bg_form.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.contact_us .contact_us_text {
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.contact_us .contact_us_text h2 {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.contact_us .contact_us_text h3 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.contact_us .contact_us_icons {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_us .contact_us_icons .contact_us_icons_blok {
+  padding-top: 30px;
+}
+
+.contact_us .contact_us_icons .contact_us_icons_blok i {
+  background-color: #2D47AF;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.contact_us .contact_us_icons .contact_us_icons_blok i:hover {
+  border: 1px solid black;
+}
+
+.contact_us .contact_us_icons .contact_us_icons_blok i:active {
+  background-color: #ffffff;
+  color: #2D47AF;
+  padding: 15px;
+}
+
+.contact_us .contact_us_icons .contact_us_icons_blok h3 {
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contact_us .contact_us_icons .contact_us_icons_blok h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contact_us .contact_us_form {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail {
+  margin-bottom: 50px;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  border: none;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input::-webkit-input-placeholder {
+  padding-left: 10%;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input::-moz-placeholder {
+  padding-left: 10%;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input:-ms-input-placeholder {
+  padding-left: 10%;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input::-ms-input-placeholder {
+  padding-left: 10%;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input::placeholder {
+  padding-left: 10%;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input:hover {
+  box-shadow: 0px 0px 20px 12px #ffffff;
+}
+
+.contact_us .contact_us_form .contact_us_name_mail input:focus {
+  color: #008A7B;
+  box-shadow: 0px 0px 20px 12px #008A7B;
+}
+
+.contact_us .contact_us_mesege {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_us .contact_us_mesege input {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  border: none;
+}
+
+.contact_us .contact_us_mesege input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.contact_us .contact_us_mesege input::-moz-placeholder {
+  text-align: center;
+}
+
+.contact_us .contact_us_mesege input:-ms-input-placeholder {
+  text-align: center;
+}
+
+.contact_us .contact_us_mesege input::-ms-input-placeholder {
+  text-align: center;
+}
+
+.contact_us .contact_us_mesege input::placeholder {
+  text-align: center;
+}
+
+.contact_us .contact_us_mesege input:hover {
+  box-shadow: 0px 0px 20px 12px #ffffff;
+}
+
+.contact_us .contact_us_mesege input:focus {
+  color: #008A7B;
+  box-shadow: 0px 0px 20px 12px #008A7B;
+}
+
+.contact_us .contact_us_bottun {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 150px;
+}
+
+.contact_us .contact_us_bottun button {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  background-color: #008A7B;
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.contact_us .contact_us_bottun button:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+.contact_us .contact_us_bottun button:active {
+  width: 99%;
+  height: 69px;
+}
+
 /* футер */
+.footer {
+  text-align: center;
+}
+
+.footer .footer_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .footer_content .footer_icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.footer .footer_content .footer_icons i {
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.footer .footer_content .footer_icons i:hover {
+  color: #008A7B;
+}
+
+.footer .footer_content .footer_icons i:active {
+  font-size: 35px;
+}
+
+.footer .footer_text {
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.footer .footer_text h2 {
+  font-size: 10px;
+}
