@@ -877,6 +877,7 @@ img.mfp-img {
 
 body {
   font-family: "Noto Sans KR";
+  transition: 0.5s;
 }
 
 /* навигация */
@@ -1024,6 +1025,7 @@ body {
 /* контейнер our_services */
 .our_services {
   text-align: center;
+  transition: 0.5s;
 }
 
 .our_services .our_services_items {
@@ -1090,6 +1092,12 @@ body {
   border: 2px solid #ffffff;
 }
 
+.our_services_block .our_services_card button:active {
+  color: #ffffff;
+  background: #1B1B1B;
+  border: none;
+}
+
 /* контейнер letest_works */
 .letest_works {
   text-align: center;
@@ -1097,7 +1105,6 @@ body {
 
 .letest_works .letest_works_text {
   padding-top: 150px;
-  /* padding-bottom: 100px; */
 }
 
 .letest_works .letest_works_text h2 {
@@ -1118,30 +1125,167 @@ body {
 
 .letest_works .letest_works_popup_item a {
   box-shadow: 0px 0px 24px 11px #1B1B1B;
+  transition: 0.5s;
+}
+
+.letest_works .letest_works_popup_item a:hover {
+  box-shadow: 0px 0px 24px 11px #008A7B;
 }
 
 .letest_works .letest_works_popup_item a:hover h2 {
-  opacity: 1;
+  opacity: 10;
+  display: block;
 }
 
 .letest_works .letest_works_popup_item a:hover img {
-  opacity: .2;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  opacity: .8;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 .letest_works .letest_works_popup_item a h2 {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+  display: none;
+  color: black;
+  font-weight: bold;
+  opacity: 1;
 }
 
-/* контайнер prising_plan */
-/* контейнер pircing_plan */
+/* контайнер pricing_plan */
+.prising_plan {
+  text-align: center;
+}
+
+.prising_plan .prising_plan_content {
+  padding-top: 200px;
+}
+
+.prising_plan .prising_plan_content .prising_plan_text h2 {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.prising_plan .prising_plan_content .prising_plan_text h3 {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.prising_plan .prising_plan_bloks {
+  display: flex;
+  justify-content: center;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item {
+  border: 1px solid #1B1B1B;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin: 30px;
+  padding: 0;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item:hover {
+  box-shadow: 0px 0px 24px 11px #1B1B1B;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_bloks_item_name-price {
+  background: linear-gradient(10deg, white 0%, white 30%, #2d47af 0%, #2d47af 80%);
+  padding-top: 30px;
+  padding-bottom: 100px;
+  color: #FFFFFF;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_bloks_item_name-price h2 {
+  font-weight: bold;
+  font-family: "Cabin";
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_bloks_item_name-price .prising_plan_price {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_bloks_item_name-price .prising_plan_price h2 {
+  font-weight: bold;
+  font-size: 23px;
+  padding-right: 3px;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_bloks_item_name-price .prising_plan_price h3 {
+  font-weight: bold;
+  font-size: 40px;
+  padding-right: 3px;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_bloks_item_name-price .prising_plan_price h4 {
+  font-size: 18px;
+  padding-top: 25px;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_text {
+  padding-top: 10px;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item .prising_plan_text h3 {
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Cabin";
+  font-size: 20px;
+  padding: 15px;
+  color: #1B1B1B;
+  border: 2px solid #1B1B1B;
+  border-radius: 5px;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item button:hover {
+  box-shadow: 0px 0px 24px 11px #008A7B;
+}
+
+.prising_plan .prising_plan_bloks .prising_plan_bloks_item button:active {
+  background: #1B1B1B;
+  color: #ffffff;
+}
+
 /* контейнер our_team_member */
+.our_team_member {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.our_team_member h2 {
+  font-family: "Cabin";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.our_team_member h3 {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.carousel-inner .carousel-item .slide {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.carousel-inner .carousel-item .slide img {
+  width: 100px;
+  height: 300px;
+}
+
 /* контейнер Blog */
 /* контейнер contact_us */
 /* футер */

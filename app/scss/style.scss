@@ -14,6 +14,7 @@ $color_title: #66360C;
 
 body {
     font-family: $font_sub;
+    transition : 0.5s;
 
 }
 
@@ -170,10 +171,12 @@ body {
 /* контейнер our_services */
 .our_services {
     text-align: center;
+    transition: 0.5s;
 
     .our_services_items {
         padding-top   : 160px;
         padding-bottom: 100px;
+
 
         h2 {
             font-family: $font_title;
@@ -233,6 +236,13 @@ body {
                 background: #008A7B;
                 border    : 2px solid #ffffff;
             }
+
+            &:active {
+                color     : #ffffff;
+                background: $color_text;
+                border    : none;
+
+            }
         }
     }
 }
@@ -242,8 +252,7 @@ body {
     text-align: center;
 
     .letest_works_text {
-        padding-top      : 150px;
-        /* padding-bottom: 100px; */
+        padding-top: 150px;
 
         h2 {
             font-family: $font_title;
@@ -263,25 +272,180 @@ body {
 
         a {
             box-shadow: 0px 0px 24px 11px $color_text;
-            &:hover h2{
-                opacity: 1;
+            transition: 0.5s;
+
+            &:hover {
+                box-shadow: 0px 0px 24px 11px #008A7B;
             }
-            &:hover img{
-                opacity: .2 ;
-                filter: blur(5px);
+
+            &:hover h2 {
+                opacity: 10;
+                display: block;
+            }
+
+            &:hover img {
+                opacity: .8;
+                filter : blur(10px);
             }
 
             h2 {
-                position: absolute;
-                top: 0;
-                left    : 0;
-                bottom  : 0;
-                right   : 0;
-                opacity : 0;
-               
+                position   : absolute;
+                top        : 50%;
+                left       : 0;
+                bottom     : 0;
+                right      : 0;
+                display    : none;
+                color      : black;
+                font-weight: bold;
+                opacity    : 1;
             }
+
+            img {}
+        }
+
+    }
+}
+
+/* контайнер pricing_plan */
+.prising_plan {
+    text-align: center;
+
+    .prising_plan_content {
+        padding-top: 200px;
+
+        .prising_plan_text {
+            h2 {
+                font-family: $font_title;
+                font-weight: bold;
+                font-size  : 40px;
+            }
+
+            h3 {
+                padding-top: 30px;
+                font-size  : 20px;
+            }
+        }
+
+    }
+
+    .prising_plan_bloks {
+        display        : flex;
+        justify-content: center;
+
+
+        .prising_plan_bloks_item {
+            border       : 1px solid $color_text;
+            border-radius: 5px;
+            margin-top   : 50px;
+            margin       : 30px;
+            padding      : 0;
+
+            &:hover {
+                box-shadow: 0px 0px 24px 11px $color_text;
+            }
+
+            .prising_plan_bloks_item_name-price {
+
+                background    : linear-gradient(10deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(45, 71, 175, 1) 0%, rgba(45, 71, 175, 1) 80%);
+                padding-top   : 30px;
+                padding-bottom: 100px;
+                color         : #FFFFFF;
+
+                h2 {
+                    font-weight: bold;
+                    font-family: $font_title;
+                }
+
+                .prising_plan_price {
+                    display        : flex;
+                    justify-content: center;
+                    margin-top     : 20px;
+
+                    h2 {
+                        font-weight  : bold;
+                        font-size    : 23px;
+                        padding-right: 3px;
+                    }
+
+                    h3 {
+                        font-weight  : bold;
+                        font-size    : 40px;
+                        padding-right: 3px;
+                    }
+
+                    h4 {
+                        font-size  : 18px;
+                        padding-top: 25px;
+                    }
+                }
+            }
+
+            .prising_plan_text {
+                padding-top: 10px;
+
+                h3 {
+                    font-size  : 15px;
+                    padding-top: 20px;
+                }
+
+            }
+
+            button {
+                margin-top    : 50px;
+                margin-bottom : 50px;
+                text-transform: uppercase;
+                font-weight   : bold;
+                font-family   : $font_title;
+                font-size     : 20px;
+                padding       : 15px;
+                color         : $color_text;
+                border        : 2px solid $color_text;
+                border-radius : 5px;
+
+                &:hover {
+                    box-shadow: 0px 0px 24px 11px #008A7B;
+
+                }
+
+                &:active {
+                    background: $color_text;
+                    color     : #ffffff;
+                }
+            }
+
+        }
+    }
+
+}
+
+/* контейнер our_team_member */
+.our_team_member {
+    text-align : center;
+    padding-top: 200px;
+
+    h2 {
+        font-family: $font_title;
+        font-weight: bold;
+        font-size  : 40px;
+    }
+
+    h3 {
+        padding-top: 10px;
+        font-size  : 20px;
+    }
+}
+
+.carousel-inner {
+
+    .carousel-item {
+        .slide {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
             img {
-                
+
+                width : 100px;
+                height: 300px;
             }
         }
 
@@ -290,9 +454,6 @@ body {
 
 
 
-/* контайнер prising_plan */
-/* контейнер pircing_plan */
-/* контейнер our_team_member */
 /* контейнер Blog */
 /* контейнер contact_us */
 /* футер */
