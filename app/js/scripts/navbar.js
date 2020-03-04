@@ -9,16 +9,11 @@ $(window).on('scroll', function(){
 })
 
 
-$(document).ready(function(){
-
-    $("#menu").on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
+$(document).ready(function () {
+    $(".container_heder_text").on("click", "a", function (event) {
         event.preventDefault();
-        //забираем идентификатор бока с атрибута href
-        var id  = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-         top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
     });
 });

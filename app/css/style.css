@@ -993,14 +993,16 @@ body {
   border: 3px solid #1B1B1B;
 }
 
-.container_heder .container_heder_text i {
+.container_heder .container_heder_text a {
   cursor: pointer;
   display: block;
   margin-top: 100px;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 
-.container_heder .container_heder_text i:hover {
+.container_heder .container_heder_text a:hover {
+  text-decoration: none;
   color: #ffffff;
 }
 

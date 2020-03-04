@@ -140,13 +140,15 @@ body {
             }
         }
 
-        i {
+        a {
             cursor       : pointer;
             display      : block;
             margin-top   : 100px;
             margin-bottom: 50px;
+            text-decoration: none;
 
             &:hover {
+                text-decoration: none;
                 color: #ffffff;
             }
         }
